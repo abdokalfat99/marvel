@@ -15,15 +15,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider<QuranProviders>(create: (_) => QuranProviders()),
+        ChangeNotifierProvider<QuranProvider>(create: (_) => QuranProvider()),
       ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Quran',
+      child:  const MaterialApp(
+        title: ' ',
+                home: HomeScreen(),
+
         ),
-        home: const HomeScreen(),
       );
-    // ignore: dead_code
-    ;
   }
 }

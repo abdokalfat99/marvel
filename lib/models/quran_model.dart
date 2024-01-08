@@ -223,7 +223,9 @@ class SajdaClass {
 }
 
 enum RevelationType {
+    // ignore: constant_identifier_names
     MECCAN,
+    // ignore: constant_identifier_names
     MEDINAN
 }
 
